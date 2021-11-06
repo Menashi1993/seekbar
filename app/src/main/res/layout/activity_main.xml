@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:background="@drawable/border"/>
+
+
+        <TextView
+            android:id="@+id/myTV"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp" />
+
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:text="Red"/>
+            <SeekBar
+                android:id="@+id/redSeekBar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="255"
+                android:progress="100"/>
+            <TextView
+                android:id="@+id/redTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="255"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green"/>
+            <SeekBar
+                android:id="@+id/greenSeekBar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="255"
+                android:progress="100"/>
+            <TextView
+                android:id="@+id/greenTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="255"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue"/>
+            <SeekBar
+                android:id="@+id/blueSeekBar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="255"
+                android:progress="100"/>
+            <TextView
+                android:id="@+id/blueTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="255"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="opacity"/>
+            <SeekBar
+                android:id="@+id/opacitySeekBar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="255"
+                android:progress="100"/>
+            <TextView
+                android:id="@+id/opacityTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="10dp">
+            <Button
+                android:id="@+id/setClr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:text="SET COLOR"
+                android:visibility="gone">
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

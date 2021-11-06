@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="myRBStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#FFFF00</item>
+        <item name ="android:textSize">24sp</item>
+    </style>
+
+    <style name="radioBtnStyle" parent="Theme.AppCompat.Light">
+        <item name ="colorAccent">@android:color/holo_green_dark</item>
+        <item name ="android:textColorSecondary">@android:color/holo_orange_light</item>
+    </style>
+
+</resources>
